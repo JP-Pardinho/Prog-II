@@ -6,7 +6,7 @@ int main () {
     double media;
     int i = 0;
 
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 10; i++) {
         printf("Digite um numero: ");
         scanf("%lf", &numeros[i]);
         soma += numeros[i];
@@ -14,9 +14,12 @@ int main () {
 
     media = soma / 10;
 
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 10; i++) {
         if (numeros[i] > media) {
             printf("O numero %.2lf e maior que a media %.2lf\n", numeros[i], media);
+        }
+        else {
+            printf("O numero %.2lf é menor ou igual a media %.2lf\n", numeros[i], media);
         }
     }
 
