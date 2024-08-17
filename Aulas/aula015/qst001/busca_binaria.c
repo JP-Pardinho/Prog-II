@@ -7,6 +7,7 @@ sucedida, a função deve imprimir uma mensagem de erro e abortar o programa.
 b) Implemente uma função que preenche um vetor de inteiros com capacidade para N ele-
 mentos. Sua função recebe um vetor de inteiros (alocado dinâmicamente) e o tamanho do
 vetor.
+
 c) Implemente uma função que imprime um vetor de inteiros. Sua função recebe um vetor de
 inteiros (alocado dinâmicamente) e o tamanho do vetor.
 
@@ -38,6 +39,7 @@ int* aloca_vetor (int tamanho) {
         if (V == NULL){
             exit(1);
         }
+        printf("%p\n", V);
         return V;
     }
     return NULL;
@@ -46,10 +48,9 @@ int* aloca_vetor (int tamanho) {
 void adiciona_vetor (int *arr, int comp) {
     int i;
     arr = (int *)malloc(comp*sizeof(int));
-    for(i=0; i < comp; i++) {
+    for(i = 0; i < comp; i++) {
         scanf("%d", &arr[i]);
     }
-    
 }
 
 
@@ -63,6 +64,10 @@ int main() {
     f = aloca_vetor(tam_v);
 
     adiciona_vetor(f, tam_v);
+
+    f[0] = 3;
+    f[1] = 3;
+    f[2] = 3;
 
     for (int i = 0; i < tam_v; i++) {
         printf("%d\n", f[i]);
