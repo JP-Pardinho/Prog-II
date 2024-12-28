@@ -1,0 +1,44 @@
+HOTEL: 
+VAR:
+    estrutura hospede:
+        nome: texto 
+        cpf: inteiro
+    fim-estrutura
+    estrutura hotel:
+        n_quartos <- 5, reserva <- 0: inteiro
+    fim-estrutura
+
+    i, op: inteiro
+
+INICIO:
+
+    faça:
+        mostre: "MENU DE CADASTRO: "
+        mostre: "1 - CADASTRAR" 
+        mostre: "2 - VERIFICAR" 
+        mostre: "3 - SAIR" 
+        leia: op
+
+        para i até 5 faça:
+            se (op = 1) então:
+                n_quartos[i] <- n_quartos - 1 
+                mostrar: "Nome do hospede: "
+                leia: nome[i].hospede
+                mostrar: "CPF: "
+                leia: cpf[i].hospede
+                mostrar: "Qual tipo de quarto: "
+                leia: tipo_quarto[i].hotel
+            fim-se
+                se (op = 2)
+                
+                fim-se
+
+                se (op = 3)
+
+                fim-se
+            fim-para
+
+    enquanto: op != 3
+
+
+

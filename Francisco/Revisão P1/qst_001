@@ -1,0 +1,40 @@
+Telecomunicações: 
+VAR:
+    estrutura funcionario
+        salario_total, salario_base, valor_extra: reais
+        horas_extras, i, op, n_funcionarios: inteiros
+        departamento, nome: texto
+    fim estrutura
+INICIO:
+    i <- 0
+    n_funcionarios <- 0
+
+    mostrar: "Menu de funcionarios"
+    mostrar: "1 - Cadastrar funcionario"
+    mostrar: "2 - Sair"
+
+    faça:
+
+        leia: op
+
+        se (op = 1):
+            n_funcionarios <- n_funcionarios + 1
+            para i até n_funcionarios faça:
+                mostrar: "Nome: "
+                leia: nome[i].funcionarios
+                mostrar: "Departamento: "
+                leia: departamento[i].funcionarios
+                mostrar: "Salario Base: "
+                leia: salario_base[i].funcionarios
+                mostrar: "Horas extras: "
+                leia: horas_extra[i].funcionarios
+                mostrar: "Valor hora extra: "
+                leia: valor_hora[i].funcionarios
+
+                salario_total[i] <- salario_total[i] + (valor_hora * horas_extras)
+        fim-se
+
+        se (op = 2):
+            SAIR
+    enquanto: op != 2
+
