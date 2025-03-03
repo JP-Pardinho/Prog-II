@@ -1,0 +1,23 @@
+INÍCIO
+    ESCREVER "Digite a idade do cliente: "
+    LER idade
+
+    ESCREVER "Digite a renda mensal do cliente: "
+    LER renda
+
+    ESCREVER "O cliente tem histórico financeiro positivo? (S/N): "
+    LER historico
+
+    SE idade < 18 ENTAO
+        ESCREVER "Empréstimo rejeitado: Cliente menor de idade."
+    
+    SENÃO SE renda < 2000 ENTAO
+        ESCREVER "Empréstimo rejeitado: Renda insuficiente."
+
+    SENÃO SE historico = "N" ENTAO
+        ESCREVER "Empréstimo rejeitado: Histórico financeiro negativo."
+
+    SENÃO
+        ESCREVER "Empréstimo aprovado!"
+    
+FIM

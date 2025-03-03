@@ -38,3 +38,5 @@ INICIO:
             SAIR
     enquanto: op != 2
 
+FIM
+

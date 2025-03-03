@@ -1,0 +1,66 @@
+CALCULADORA:
+VAR:
+    x, y, seno, cosseno, tg: REAIS
+    op : inteiro
+INICIO:
+    mostre: "Esolha uma operação: "
+    mostre: "1 - SOMA" 
+    mostre: "2 - SUBTRAÇÃO"
+    mostre: "3 - DIVISÃO"
+    mostre: "4 - MULTIPLICAÇÃO"
+    mostre: "5 - Trigonometria"
+
+    se (op = 1) então:
+        mostre: "Digite um valor para X: "
+        leia: x
+        mostre: "Digite um valor para Y: "
+        leia: y
+        mostre: "{X} + {Y} = {x + y}"
+    senão se (op = 2) então: 
+        mostre: "Digite um valor para X: "
+        leia: x
+        mostre: "Digite um valor para Y: "
+        leia: y
+        mostre: "{X} - {Y} = {x - y}"
+    senão se (op = 3) então: 
+        mostre: "Digite um valor para X: "
+        leia: x
+        mostre: "Digite um valor para Y: "
+        leia: y
+        mostre: "{X} / {Y} = {x / y}"
+    senão se (op = 4) então: 
+        mostre: "Digite um valor para X: "
+        leia: x
+        mostre: "Digite um valor para Y: "
+        leia: y
+        mostre: "{X} x {Y} = {x * y}"
+    senão se (op = 5) então: 
+        mostre: "Deseja calcular oq da trigonometria?"
+        mostre: "1 - SENO"
+        mostre: "2 - COSSENO"
+        mostre: "3 - TANGENTE"
+
+        se (op = 1) então:
+            mostre: "Digite o valor do CO: "
+            leia: x
+            mostre: "Digite o valor da HIP: "
+            leia: y
+            seno = x/y
+            mostre: "seno = {seno}"
+        senão se (op = 2) então: 
+            mostre: "Digite o valor do CA: "
+            leia: x
+            mostre: "Digite o valor da HIP: "
+            leia: y
+            cosseno = x/y
+            mostre: "Cosseno = {cosseno}"
+        senão se (op = 3) então: 
+            mostre: "Digite o valor do CO: "
+            leia: x
+            mostre: "Digite o valor da CA: "
+            leia: y
+            tg = x/y
+            mostre: "Tangente = {tg}"
+
+FIM
+ 

@@ -1,0 +1,38 @@
+ESTOQUE: 
+
+VAR:
+    sabao_liq, amaciante, agua_sanit, detergente, sabao_barra, desinfetante, sabonete: inteiro
+INICIO:
+    faça: 
+        mostre: "Digite a quantidade de itens do estoque:"
+        mostre: "Quantidade de Sabão líquido: "
+        leia: sabao_liq
+        mostre: "Quantidade de amaciante:"
+        leia: amaciante
+        mostre: "Quantidade de água sanitária:"
+        leia: agua_sanit
+        mostre: "Quantidade de detergente:"
+        leia: detergente
+        mostre: "Quantidade de sabão em barras":
+        leia: sabao_barra
+        mostre: "Quantidade de desinfetante:"
+        leia: desinfetante
+        mostre: "Quantidade de sabonetes:"
+        leia: sabonete
+
+    se (sabao_liq < 50) então:
+        mostre: "Produto abaixo do nivel permitido!"
+    senão se (amaciante < 50) então:
+        mostre: "Produto abaixo do nivel permitido!"
+    senão se (agua_sanit < 50) então:
+        mostre: "Produto abaixo do nivel permitido!"
+    senão se (detergente < 50) então:
+        mostre: "Produto abaixo do nivel permitido!"
+    senão se (sabao_barra < 50) então:
+        mostre: "Produto abaixo do nivel permitido!"
+    senão se (desinfetante < 50) então:
+        mostre: "Produto abaixo do nivel permitido!"
+    senão se (sabonete < 50) então: 
+        mostre: "Produto abaixo do nivel permitido!"
+
+FIM
